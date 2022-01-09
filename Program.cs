@@ -6,7 +6,7 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            static void Main(string[] args)
+            
             {
                 //UC1
                 UC1FirstName firstName = new UC1FirstName(); ;
@@ -19,6 +19,12 @@ namespace UserRegistration
                 Console.WriteLine("Please Enter your last name");
                 var check2 = lastName.ValidateFirstName(Console.ReadLine());
                 Console.WriteLine(check2);
+
+                //UC3
+                UC3CheckEmail email = new UC3CheckEmail();
+                Console.WriteLine("Please Enter your email to check");
+                var check3 = email.ValidateEMail(Console.ReadLine());
+                Console.WriteLine(check3);
             }
         }
     }
