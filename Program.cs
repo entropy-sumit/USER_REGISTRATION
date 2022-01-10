@@ -36,6 +36,12 @@ namespace UserRegistration
                 Console.WriteLine("Please Enter your password to check");
                 var check5 = password.ValidatePassword1(Console.ReadLine());
                 Console.WriteLine(check5);
+
+                //UC6
+                UC6Password password1 = new UC6Password();
+                Console.WriteLine("Please Enter your password to check");
+                var check6 = password1.ValidatePassword(Console.ReadLine());
+                Console.WriteLine(check6);
             }
         }
     }
