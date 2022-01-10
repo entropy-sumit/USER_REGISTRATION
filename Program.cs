@@ -30,6 +30,12 @@ namespace UserRegistration
                 Console.WriteLine("Please Enter your mobile no with country code");
                 var check4 = mobile.ValidateMobileNo(Console.ReadLine());
                 Console.WriteLine(check4);
+                
+                //UC5
+                UC5Password password = new UC5Password();
+                Console.WriteLine("Please Enter your password to check");
+                var check5 = password.ValidatePassword1(Console.ReadLine());
+                Console.WriteLine(check5);
             }
         }
     }
